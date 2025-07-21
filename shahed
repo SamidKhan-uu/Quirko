@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quirko - Clothing Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer>
+    function toggleCart() {
+      const cart = document.getElementById("cartPanel");
+      cart.classList.toggle("hidden");
+    }
+  </script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <h1 class="text-2xl font-bold text-gray-800">Quirko</h1>
+      </div>
+      <div class="flex items-center space-x-6">
+        <nav class="space-x-4">
+          <a href="#" class="text-gray-700 hover:text-black">Home</a>
+          <a href="#products" class="text-gray-700 hover:text-black">Products</a>
+          <a href="#contact" class="text-gray-700 hover:text-black">Contact</a>
+        </nav>
+        <button onclick="toggleCart()" class="text-gray-700 hover:text-black relative">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h14l1-5H6.4M7 13l-1 5h13m-5 0a1 1 0 11-2 0m6 0a1 1 0 11-2 0" />
+          </svg>
+          <span class="absolute top-0 right-0 bg-red-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cart Panel -->
+  <div id="cartPanel" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center hidden">
+    <button onclick="toggleCart()" class="absolute top-4 right-4 text-2xl">&times;</button>
+    <h2 class="text-2xl font-bold">Your cart <span class="text-gray-400">0</span></h2>
+    <p class="text-3xl font-bold mt-10">It’s a little<br>empty here</p>
+    <p class="text-gray-500 mt-2">Your cart is currently empty</p>
+    <a href="#products" onclick="toggleCart()" class="mt-6 px-6 py-2 border border-black text-black hover:bg-black hover:text-white">Start Shopping</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 bg-cover bg-center h-64 text-white flex items-center justify-center" style="background-image: url('/mnt/data/3D Tracksuit digital fashion concept design.jpg');">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-2">Trendy & Affordable Fashion</h2>
+      <p class="text-xl">Explore our latest collection now!</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-10">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-6 text-center">Our Products</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Product 1 -->
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1618354697926-486c324e1e91?auto=format&fit=crop&w=400&q=80" alt="T-Shirt" class="w-full h-64 object-cover mb-4 rounded">
+          <h4 class="text-xl font-semibold">Classic White T-Shirt</h4>
+          <p class="text-gray-600">Comfortable and stylish everyday tee.</p>
+          <p class="text-green-600 font-bold mt-2">$19.99</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Denim Jacket" class="w-full h-64 object-cover mb-4 rounded">
+          <h4 class="text-xl font-semibold">Denim Jacket</h4>
+          <p class="text-gray-600">Stylish outerwear for all seasons.</p>
+          <p class="text-green-600 font-bold mt-2">$49.99</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white p-4 rounded shadow">
+          <img src="https://images.unsplash.com/photo-1593032457866-9e6c10f6874c?auto=format&fit=crop&w=400&q=80" alt="Summer Dress" class="w-full h-64 object-cover mb-4 rounded">
+          <h4 class="text-xl font-semibold">Floral Summer Dress</h4>
+          <p class="text-gray-600">Lightweight and breathable fabric.</p>
+          <p class="text-green-600 font-bold mt-2">$34.99</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-10">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+      <p class="text-gray-600 mb-4">Have questions? We're here to help.</p>
+      <a href="mailto:info@quirko.com" class="text-blue-500 hover:underline">info@quirko.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>&copy; 2025 Quirko. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
