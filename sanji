@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Bootstrap Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" defer></script>
+    
+
+</script>
+   <style>
+        body {
+            background-image: url('assets/3d-render-sunglasses-shopping-cart-illustration-design.jpg');
+            background-size: cover;                  
+            background-repeat: no-repeat;            
+            background-position: center center;      
+            height: 100vh;                           
+            margin: 0;                               
+        }
+    </style>
+   
+  
+</div>
+
+</head>
+<body>
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main Navigation">
+  <div class="container">
+
+    <!-- logo -->
+    <img style="width:100px; height:50px;" class="card-img-top" src="assets/picture 3.jpg" alt="waredrop">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#Menu" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- 🛒 Cart Button inside Navbar -->
+      <button class="btn btn-outline-light" onclick="toggleCart()">🛒 Cart</button>
+    </div>
+
+  </div>
+</nav>
+
+    </header>
+
+ <!--main section-->   
+ <section id="menu" class="py-5" aria-labelleadby="menu-title">
+    <div class="container">
+        <h2 id="menu-title" class="text-center mb-4">Our Menu</h2>
+        <div class="row g-4"  role="list">
+            <article class="col-md-4" role="listitem">
+               <div class="card h-100 shadow-sm">
+                    <img class="card-img-top" src="assets/picture 2.webp" alt="waredrop">
+                    <div class="card-body">
+                <h3 class="card-tittle h5">shirts</h3>
+                <p class="card-text">style asnd slay</p>
+                <p class="text-muted">£2.50</p>
+               </div>
+               </div>
+            </article>
+        </div>
+    </div>
+ </section>
+  
+
+
+<footer class="bg-dark text-white text-center py-4 mt-auto">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Quirko . All rights reserved.</p>
+    <div>
+      <a href="#" class="text-white mx-2">Privacy Policy</a> |
+      <a href="#" class="text-white mx-2">Terms</a> |
+      <a href="#" class="text-white mx-2">Contact</a>
+    </div>
+  </div>
+</footer>
+
+ 
+
+
+    
+</body>
+</html>
