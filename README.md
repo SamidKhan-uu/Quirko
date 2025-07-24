@@ -1,34 +1,35 @@
-#html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quirko</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Bootstrap Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" defer></script>
+
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="nav-logo">
-                <div class="logo"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main Navigation">
+            <div class="container">
+                <a href="#"" class="navbar-brand">Quirko</a>
+                <button class="navbar-toggler" type="button" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                       <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                       <li class="nav-item"><a href="#Menu" class="nav-link">menu</a></li>
+                       <li class="nav-item"><a href="#contact" class="nav-link"><contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     
 </body>
 </html>
-
-#style.css
-*{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    border: border-box;
-}
-
-.navbar {
-    height: 60px;
-    background-color: yellow;
-    color: white;
-}
