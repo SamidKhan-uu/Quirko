@@ -30,6 +30,45 @@
             </div>
         </nav>
     </header>
+
+    <!--Main section-->
+    <section id="main" class="py-5" aria-labelledby="main-title">
+        <div class="container">
+         <h2 id="menu-title" class="text-center mb-4">Menu</h2>
+            <div. class="row g-4" role="list">
+                <article class="col-md-4" role="listitem">
+                  <div class="card.h-100.shadow-sma">
+                    <img class="card-img-top" src="assets/8pl4i5bo.png" alt="Burger">
+                  </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Burger</h3>
+                        <p class="card-text">A delicious burger with fresh ingredients.</p>
+                        <p class="text-muted">$8.99</p>
+                    </div>
+                </article>
+
+                <article class="col-md-4" role="listitem">
+                  <div class="card.h-100.shadow-sma">
+                    <img class="card-img-top" src="assets/8pl4i5bo.png" alt="Burger">
+                  </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Burger</h3>
+                        <p class="card-text">A delicious burger with fresh ingredients.</p>
+                        <p class="text-muted">$8.99</p>
+                    </div>
+                </article>
+
+                <article class="col-md-4" role="listitem">
+                  <div class="card.h-100.shadow-sma"> 
+                  </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Burger</h3>
+                        <p class="card-text">A delicious burger with fresh ingredients.</p>
+                        <p class="text-muted">$8.99</p>
+                    </div>
+                </article>
+            </div.>
+        </div>
     
 </body>
-</html>
+<html 
