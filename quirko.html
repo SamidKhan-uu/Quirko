@@ -1,161 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quirko</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/quirko.css">
-    <script type="text/javascript" src="js/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Project</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="darkmode">
-   <header>
-        
-      <div class="navbar">
-        <div class="nav-logo border">
-            <div class="logo"></div>
-        </div>
 
-        <div class="nav-address border">
-            <p class="add-first">Deliver to</p>
-            <div class="add-icon">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="add-second">
-                    UK
-                </p>
-            </div>
-        </div>
-
-        <div class="nav-search">
-            <select class="search-select">
-                <option>All</option>
-            </select>
-            <input placeholder="Search" class="search-input">
-            <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-        <div class="nav-signin border">
-        <p>Sign In</p>
-        <p class="nav-second">Account & list</p>
-     </div>
-     <div class="nav-return border">
-        <p>Returns</p>
-        <p class="nav-second"> & orders</p>
-     </div>
-     <div class="nav-cart border">
-        <i class="fa-solid fa-cart-shopping"></i>
-        Cart
-      
-     </div>
-     <div class="darkmood">
-        <button id="theme-switch">
-        <i class="fa-solid fa-moon"></i>
-        <i class="fa-solid fa-sun"></i>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main Navigation">
+      <div class="container">
+        <a href="#" class="navbar-brand">Quircko</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#Menu" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
 
+  <!-- Menu Section -->
+  <section id="menu" class="py-5" aria-labelledby="menu-title">
+    <div class="container">
+      <h2 id="menu-title" class="text-center mb-4">Our Menu</h2>
+      <div class="row g-4" role="list">
+        <article class="col-md-4" role="listitem">
+          <div class="card h-100 shadow-sm">
+            <img class="card-img-top" src="/assets/1f38e7f850e14962937a3d8d3277ddb1.avif" alt="NFS">
+            <div class="card-body">
+              <h3 class="card-title h5">SAMIDIANO</h3>
+              <p class="card-text">Strong and hot Shot for pure energy</p>
+              <p class="text-muted">£2.50</p>
+            </div>
+          </div>
+        </article>
 
-     </div>
+        <article class="col-md-4" role="listitem">
+          <div class="card h-100 shadow-sm">
+            <img class="card-img-top" src="/assets/369618de94bd49fc9475257a550068b2.avif" alt="NFS">
+            <div class="card-body">
+              <h3 class="card-title h5">QUIRCKO THE WATCH</h3>
+              <p class="card-text">Strong and hot Shot for pure energy</p>
+              <p class="text-muted">£2.50</p>
+            </div>
+          </div>
+        </article>
 
-    
-     <div class="panel">
-        <div class="panel-all">
-            <i class="fa-solid fa-bars"></i>
-            All
+        <article class="col-md-4" role="listitem">
+          <div class="card h-100 shadow-sm">
+            <img class="card-img-top" src="/assets/7e7ed4f535dc4716b2d7e742b91a6173.avif" alt="NFS">
+            <div class="card-body">
+              <h3 class="card-title h5">ANTHONY JAMES</h3>
+              <p class="card-text">Strong and hot Shot for pure energy</p>
+              <p class="text-muted">£2.50</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5" aria-labelledby="about-title">
+    <div class="container">
+      <h2 id="about-title" class="text-center mb-4">About us</h2>
+      <p class="lead text-center">
+        This is our class project for the Web Development course.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5" aria-labelledby="Contact-title">
+    <div class="container">
+      <h2 id="Contact-title" class="text-center mb-4">Contact Us</h2>
+      <form action="#" class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" name="name" required aria-required="true" class="form-control">
         </div>
-        <div class="panel-options">
-            <p>Today's Deals</p>
-            <p>Customer service</p>
-            <p> Registry</p>
-            <p>Sell</p> 
-            
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="text" id="email" name="Email" required aria-required="true" class="form-control">
         </div>
-        <div class="panel-deals">
-            Shop Deals 
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea name="message" id="message" rows="4" class="form-control" required aria-required="true"></textarea>
         </div>
-     </div>
-   </header> 
-
-
-   <div class="hero">
-    <div class="hero-message">
-        <p>Shop the future , Wear the now <a>Click here for more info</a></p>
+        <button type="submit" class="btn btn-dark">Send message</button>
+      </form>
     </div>
+  </section>
 
-   </div>
-   <div class="shop-section">
-     <div class="box1 box">
-     <div class="box-content">
-       <h2>Most loved fashion for you</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 9.jpg');"></div>
-        <p>See more</p>
-     </div>
-     </div>
-     <div class="box2 box">
-        <div class="box-content">
-       <h2>Watch's</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 11.jpg');"></div>
-        <p>See more</p>
-     </div>
-     </div>
-     <div class="box3 box">
-        <div class="box-content">
-       <h2>Electronic Device's</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 12.png');"></div>
-        <p>See more</p>
-     </div>
-     </div>
-     <div class="box4 box"><div class="box-content">
-       <h2>Sports Element's</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 18.jpg');"></div>
-        <p>See more</p>
-     </div>
+  <!-- Footer -->
+  <footer>
+    <div class="bg-dark text-light text-center py-3">
+      <div class="mb-2">Back to top</div>
+      <div class="mb-2">
+        <a href="#" class="text-light mx-2">Conditions of use</a>
+        <a href="#" class="text-light mx-2">Privacy Notice</a>
+        <a href="#" class="text-light mx-2">Your Ads Privacy Choices</a>
+      </div>
+      <div>© 1996-2025, Quirko.com, Inc. or its affiliates</div>
     </div>
-    <div class="box1 box">
-     <div class="box-content">
-       <h2>Book's Offers</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 14.webp');"></div>
-        <p>See more</p>
-     </div>
-     </div>
-     <div class="box2 box">
-        <div class="box-content">
-       <h2>Summer Wear's</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 15.jpg');"></div>
-        <p>See more</p>
-     </div>
-     </div>
-     <div class="box3 box">
-        <div class="box-content">
-       <h2>Kid's play zone</h2>
-        <div class="box-img" style="background-image: url('/assets/picture16.jpg');"></div>
-        <p>See more</p>
-     </div>
-     </div>
-     <div class="box4 box"><div class="box-content">
-       <h2>Daily Necessary for you</h2>
-        <div class="box-img" style="background-image: url('/assets/picture\ 17.webp');"></div>
-        <p>See more</p>
-     </div>
-    </div>
+  </footer>
 
+  <!-- Bootstrap JS (required for navbar toggle) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-   </div>
-
-   <foooter>
-    <div class="foot-panel1">
-        Back to top
-    </div>
-    <div class="foot-panel2">
-        <div class="pages">
-            <a>Conditions of use</a>
-            <a>privacy Notice</a>
-            <a>Your Ads Privacy Choices</a>
-        </div>
-    <div class="copy-right">
-             © 1996-2025, Quirko.com, Inc. or its affiliates
-    </div>
-   </foooter>
+  <!-- External JS -->
+  <script src="script.js"></script>
 </body>
 </html>
