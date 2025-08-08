@@ -20,7 +20,7 @@
 }
 
 .logo{
-    background-image: url("/assets/picture\ 3.jpg");
+    background-image: url("/assets/logo.jpg");
     background-size: cover;
     height:40px;
     width:100%;
@@ -119,6 +119,37 @@ span{
     font-weight: 700;
 }
 
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius:50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 7px;
+    right: 20px;
+}
+
+#theme-switch svg {
+    fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: none;
+}
+
 .panel{
     height: 40px;
     background-color: #222f3d;
@@ -145,7 +176,7 @@ span{
 }
 
 .hero {
-    background-image: url("/assets/picture\ 7.jpg");
+    background-image: url("/assets/background\ img.jpg");
     background-size: contain;
     height: 400px;
     display: flex;
