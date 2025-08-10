@@ -133,22 +133,20 @@ span{
     right: 20px;
 }
 
-#theme-switch svg {
+#theme-switch i {
     fill: var(--primary-color);
 }
 
-#theme-switch svg:last-child{
+#theme-switch i:last-child {
     display: none;
 }
-
-.darkmode #theme-switch svg:first-child{
-    display: none;
-
-}
-
-.darkmode #theme-switch svg:last-child{
+.darkmode #theme-switch i:first-child {
     display: none;
 }
+.darkmode #theme-switch i:last-child {
+    display: inline;
+}
+
 
 .panel{
     height: 40px;
@@ -283,4 +281,29 @@ footer {
     padding-top: 5px;
     font-size: 0.7rem;
     text-align: center;
+}
+
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --nav-bg: black;
+    --nav-text: white;
+}
+
+.darkmode {
+    --bg-color: #7d7d86;
+    --text-color: #0e0d0d;
+    --nav-bg: #2d2a2a;
+    --nav-text: #ddd;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
 }
