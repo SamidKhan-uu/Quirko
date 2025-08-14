@@ -1,74 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!--Bootstrap Bundle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" defer></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quirko</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/script.js" defer></script>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main Navigation">
-            <div class="container">
-                <a href="#"" class="navbar-brand">Quirko</a>
-                <button class="navbar-toggler" type="button" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body class="darkmode">
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                       <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
-                       <li class="nav-item"><a href="#Menu" class="nav-link">menu</a></li>
-                       <li class="nav-item"><a href="#contact" class="nav-link"><contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo border">
+        <div class="logo"></div>
+      </div>
 
-    <!--Main section-->
-    <section id="main" class="py-5" aria-labelledby="main-title">
-        <div class="container">
-         <h2 id="menu-title" class="text-center mb-4">Menu</h2>
-            <div. class="row g-4" role="list">
-                <article class="col-md-4" role="listitem">
-                  <div class="card.h-100.shadow-sma">
-                    <img class="card-img-top" src="assets/8pl4i5bo.png" alt="Burger">
-                  </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Burger</h3>
-                        <p class="card-text">A delicious burger with fresh ingredients.</p>
-                        <p class="text-muted">$8.99</p>
-                    </div>
-                </article>
-
-                <article class="col-md-4" role="listitem">
-                  <div class="card.h-100.shadow-sma">
-                    <img class="card-img-top" src="assets/8pl4i5bo.png" alt="Burger">
-                  </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Burger</h3>
-                        <p class="card-text">A delicious burger with fresh ingredients.</p>
-                        <p class="text-muted">$8.99</p>
-                    </div>
-                </article>
-
-                <article class="col-md-4" role="listitem">
-                  <div class="card.h-100.shadow-sma"> 
-                  </div>
-                    <div class="card-body">
-                        <h3 class="card-title">Burger</h3>
-                        <p class="card-text">A delicious burger with fresh ingredients.</p>
-                        <p class="text-muted">$8.99</p>
-                    </div>
-                </article>
-            </div.>
+      <div class="nav-address border">
+        <p class="add-first">Deliver to</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="add-second">UK</p>
         </div>
-    
+      </div>
+
+      <div class="nav-search">
+        <select class="search-select">
+          <option>All</option>
+        </select>
+        <input placeholder="Search" class="search-input">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="nav-signin border">
+        <p>Sign In</p>
+        <p class="nav-second">Account & list</p>
+      </div>
+      <div class="nav-return border">
+        <p>Returns</p>
+        <p class="nav-second">& Orders</p>
+      </div>
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping" aria-label="Cart"></i> Cart
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-heading">
+    <h1>Explore Top Electronic Devices</h1>
+  </section>
+
+  <section class="product-grid">
+    <div class="product">
+      <img src="/assets/IMG-4045.webp" alt="Laptop">
+      <div class="product-info">
+        <h3>Quirko Watch</h3>
+        <p>£59.09</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="/assets/wp7594576.jpg" alt="Smartphone">
+      <div class="product-info">
+        <h3>Anthony james</h3>
+        <p>£84.00</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="/assets/wp7594596.jpg" alt="Tablet">
+      <div class="product-info">
+        <h3>Casio vintage</h3>
+        <p>£432.00</p>
+        <button>OUT OF STOCK</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="assets/wp7594596.jpg" alt="Smartwatch">
+      <div class="product-info">
+        <h3>Series 9</h3>
+        <p>£29.00</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="assets/wp7594686.jpg" alt="Headphones">
+      <div class="product-info">
+        <h3>1000XM5</h3>
+        <p>£349.00</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="assets/wp7594707.jpg" alt="Console">
+      <div class="product-info">
+        <h3>mark joker s</h3>
+        <p>£479.99</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="assets/wp7594686.jpg" alt="Charger">
+      <div class="product-info">
+        <h3>THE WATCH</h3>
+        <p>£79.99</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="assets/wp7594707.jpg" alt="Display">
+      <div class="product-info">
+        <h3>Tidbyty</h3>
+        <p>£99.99</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-panel1">Back to top</div>
+    <div class="foot-panel2">
+      <div class="pages">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Your Ads Privacy Choices</a>
+      </div>
+      <div class="copy-right">
+        © 1996-2025, Quirko.com, Inc. or its affiliates
+      </div>
+    </div>
+  </footer>
+
 </body>
-<html 
+</html>
