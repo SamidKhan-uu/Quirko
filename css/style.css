@@ -4,11 +4,6 @@
     border: border-box;
 }
 
-body.darkmode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
 .navbar {
     height: 60px;
     background-color:black;
@@ -122,36 +117,8 @@ span{
 .nav-cart{
     font-size: 0.85rem;
     font-weight: 700;
-}
 
-#theme-switch{
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    border-radius:50%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 7px;
-    right: 20px;
 }
-
-#theme-switch i {
-    fill: var(--primary-color);
-}
-
-#theme-switch i:last-child {
-    display: none;
-}
-.darkmode #theme-switch i:first-child {
-    display: none;
-}
-.darkmode #theme-switch i:last-child {
-    display: inline;
-}
-
 
 .panel{
     height: 40px;
@@ -179,7 +146,7 @@ span{
 }
 
 .hero {
-    background-image: url("/assets/background\ img.jpg");
+    background-image: url("/assets/background.jpg");
     background-size: contain;
     height: 400px;
     display: flex;
@@ -220,8 +187,7 @@ span{
     
     height:400px;
     width: 23%;
-    background-color: rgb(3, 3, 4);
-    color:aliceblue;
+    background-color: aliceblue;
     padding: 20px 0px 15px;
     margin-top: 15px;
     
@@ -268,7 +234,7 @@ footer {
 
 
 .foot-panel2{
-    background-color: #474b50;
+    background-color: #37475a;
     color:aliceblue;
     border-top: 0.5px solid white;
     height:70px;
@@ -276,44 +242,9 @@ footer {
    
 
 }
-#cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #222;
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 9999;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
-}
 
-#cookie-banner p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.cookie-buttons button {
-    margin-left: 10px;
-    padding: 6px 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-#allow-cookies {
-    background-color: #4CAF50;
-    color: white;
-}
-
-#decline-cookies {
-    background-color: #f44336;
-    color: white;
+.pages a{
+    color: #005bb5;
 }
 
 .pages{
@@ -329,32 +260,89 @@ footer {
 }
 
 
-:root {
-    --bg-color: white;
-    --text-color: black;
-    --nav-bg: black;
-    --nav-text: white;
-}
-
-.darkmode {
-    --bg-color: #7d7d86;
-    --text-color: #0e0d0d;
-    --nav-bg: #2d2a2a;
-    --nav-text: #ddd;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-.navbar {
-    background-color: var(--nav-bg);
-    color: var(--nav-text);
+#signinModal {
+  display: none; 
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 
-/* Samid css */
+#signinModal .modal-content {
+  background-color:rgb(255, 187, 0);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+#signinModal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+#signinModal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+
+#signinModal button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  border: none;
+  color: rgb(255, 217, 0);
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#signinModal button:hover {
+  background-color: #005bb5;
+}
+
+
+
+
+
+/*samid css*/
+.hero-heading {
+    background-color: #000;
+    color: #f5f5f5;
+  text-align: center;
+  padding: 30px 0;
+}
+.hero-message{
+    background-color: black;
+    color: white;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+
+}
+
 #themeToggle {
   margin-top: 10px;
   padding: 8px 12px;
@@ -399,13 +387,13 @@ body {
 .product-info h3 {
   font-size: 1.1rem;
   margin: 10px 0;
-  color: #000; /* Fix: dark text on white card */
+  color: #000; 
   font-weight: 600;
 }
 
 .product-info p {
   font-weight: bold;
-  color: #000; /* Fix: dark text on white card */
+  color: #000; 
 }
 
 .product-info button {
@@ -419,4 +407,152 @@ body {
 
 .product-info button:hover {
   background-color: #ffa500;
+}
+
+
+.pages {
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*shaheed css*/
+
+
+.hero-heading {
+    background-color: #000;
+    color: #f5f5f5;
+  text-align: center;
+  padding: 30px 0;
+}
+.hero-message{
+    background-color: black;
+    color: white;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+#themeToggle {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #ffbf00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#themeToggle:hover {
+  background-color: #ffa500;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.product {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-info h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #000; 
+  font-weight: 600;
+}
+
+.product-info p {
+  font-weight: bold;
+  color: #000; 
+}
+
+.product-info button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background-color: #ffbf00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-info button:hover {
+  background-color: #ffa500;
+}
+
+
+
+
+.pages {
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }

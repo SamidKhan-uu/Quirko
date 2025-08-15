@@ -1,68 +1,61 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById('theme-switch');
+$(document).ready(function(){
 
-    btn.addEventListener('click', () => {
-        document.body.classList.toggle('darkmode');
+    $("#signinBtn").click(function(){
+        $("#signinModal").fadeIn();
     });
-});
 
-// Theme toggle
-const toggleButton = document.getElementById("themeToggle");
-if (toggleButton) {
-    toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("darkmode");
-        const isDark = document.body.classList.contains("darkmode");
-        localStorage.setItem("theme", isDark ? "dark" : "light");
+    $("#signinModal .close").click(function(){
+        $("#signinModal").fadeOut();
     });
-}
 
-// Apply saved theme on load
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-    document.body.classList.add("darkmode");
-} else {
-    document.body.classList.remove("darkmode");
-}
-
-// Buy Now button alert
-document.querySelectorAll(".product-info button").forEach(button => {
-    button.addEventListener("click", () => {
-        alert("This feature is coming soon!");
-    });
-});
-
-// --- Cookies Functions ---
-function setCookie(name, value, days) {
-    let date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    let expires = "expires=" + date.toUTCString();
-    document.cookie = `${name}=${value};${expires};path=/`;
-}
-
-function getCookie(name) {
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let cookies = decodedCookie.split(';');
-    name = name + "=";
-    for (let c of cookies) {
-        c = c.trim();
-        if (c.indexOf(name) === 0) {
-            return c.substring(name.length, c.length);
+    $(window).click(function(event){
+        if(event.target.id === "signinModal"){
+            $("#signinModal").fadeOut();
         }
+    });
+
+    $("#signinForm").submit(function(e){
+        e.preventDefault(); 
+        let email = $("#email").val();
+        let password = $("#password").val();
+        alert("Email: " + email + "\nPassword: " + password);
+        $("#signinModal").fadeOut();
+        $(this)[0].reset();
+    });
+
+    // ---------------- Cookies ----------------
+    function setCookie(name, value, days) {
+        let date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        let expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
     }
-    return "";
-}
 
-// --- Welcome Logic ---
-$(document).ready(function () {
-    let username = getCookie("username");
-
-    if (username) {
-        alert("Welcome back, " + username + "!");
-    } else {
-        username = prompt("Enter your name:");
-        if (username && username.trim() !== "") {
-            setCookie("username", username, 7); // Cookie lasts 7 days
-            alert("Hello, " + username + "! Your name has been saved.");
+    function getCookie(name) {
+        let cname = name + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i].trim();
+            if (c.indexOf(cname) === 0) {
+                return c.substring(cname.length, c.length);
+            }
         }
+        return "";
     }
+
+    if (getCookie("cookiesAccepted") !== "yes") {
+        $("#cookieConsent").fadeIn();
+    }
+
+    $("#acceptCookies").click(function(){
+        setCookie("cookiesAccepted", "yes", 365);
+        $("#cookieConsent").fadeOut();
+    });
+
 });
+      
+
+
+
+
